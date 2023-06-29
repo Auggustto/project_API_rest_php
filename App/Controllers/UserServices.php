@@ -1,13 +1,13 @@
 <?php
 
-namespace App\UserServices;
+namespace App\Controllers;
 
 class UserServices
 {
     //  Pegando os dados dos usuarios
     public function get()
     {
-
+        echo "teste get"; 
     }
 
     // Inserindo usuarios
@@ -27,5 +27,5 @@ class UserServices
     {
 
     }
-    
+
 }

@@ -22,10 +22,11 @@ class User
         // Verificando se houve retorno na consulta
         if($statement-> rowCount() > 0)
         {
-
-        } else{
-            throw new \Exception("Usuário não encontrado!");
-            
+            return $statement -> fetch(\PDO::FETCH_ASSOC); // Retorna um array, onde só mostra os valores e não as chaves 
+        } 
+        else
+        {
+            throw new \Exception("Usuário não encontrado!");    
         }
 
     }
