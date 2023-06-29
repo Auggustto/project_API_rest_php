@@ -2,7 +2,16 @@
 
 require_once "../vendor/autoload.php";
 
-$url = explode("/", $_GET['url']);
+
+//  Verificando se existe um get url
+if($_GET["$url"]){
+
+    //  Quebrando a string e transformando num array
+    $url = explode("/", $_GET['url']);
+}
 
 var_dump($url);
+
+
+
 
